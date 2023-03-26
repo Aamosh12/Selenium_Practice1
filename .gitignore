@@ -1,0 +1,5 @@
+# geckodriver
+*.log
+
+# pycache
+_pycache_
