@@ -16,4 +16,5 @@ password = input()
 
 os.environ['PATH'] += r"C:\\driver"
 driver = webdriver.Firefox()
-driver.get("https://accounts.google.com/signin")
+driver.get("https://accounts.google.com/signup")
+
