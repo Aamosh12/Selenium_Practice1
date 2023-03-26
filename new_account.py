@@ -11,3 +11,5 @@ from selenium.webdriver.support.ui import Select
 
 os.environ['PATH'] += r"C:\\driver"
 driver = webdriver.Firefox()
+driver.get("https://accounts.google.com/signin")
+
