@@ -21,3 +21,6 @@ password = input()
 os.environ['PATH'] += r"C:\\driver"
 driver = webdriver.Firefox()
 driver.get("https://accounts.google.com/signup")
+
+f_name = driver.find_element(By.ID, "firstName")
+f_name.send_keys(first_name)
