@@ -24,3 +24,15 @@ driver.get("https://accounts.google.com/signup")
 
 f_name = driver.find_element(By.ID, "firstName")
 f_name.send_keys(first_name)
+
+l_name = driver.find_element(By.ID, "lastName")
+l_name.send_keys(last_name)
+
+user = driver.find_element(By.ID, "username")
+user.send_keys(username)
+
+passwd = driver.find_element(By.NAME, "Passwd")
+passwd.send_keys(password)
+
+confirm_pass = driver.find_element(By.NAME, "ConfirmPasswd")
+confirm_pass.send_keys(password)
