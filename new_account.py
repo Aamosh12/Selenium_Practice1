@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.ui import Select
 
-print("Enter you first name")
+print("Enter your first name")
 first_name = input()
 print("Enter your last name")
 last_name = input()
