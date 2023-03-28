@@ -17,6 +17,8 @@ print("Enter username of your choice")
 username = input()
 print("Enter a strong password")
 password = input()
+print("Enter your phone number")
+phone_num = input()
 
 os.environ['PATH'] += r"C:\\driver"
 driver = webdriver.Firefox()
