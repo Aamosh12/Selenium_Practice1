@@ -41,3 +41,19 @@ confirm_pass.send_keys(password)
 
 Next_field = driver.find_elements(By.CLASS_NAME, "VfPpkd-LgbsSe")[1]
 Next_field.click()
+
+time.sleep(5)
+phone_number = driver.find_element(By.ID, "phoneNumberId")
+phone_number.send_keys(phone_num)
+
+Next_field1 = driver.find_element(By.CLASS_NAME, "VfPpkd-LgbsSe")
+Next_field1.click()
+
+verfication_num = print("Enter the recent code you got in the number that you have entered earlier: ")
+verfication_num = input()
+
+verify_num = driver.find_element(By.NAME, "code")
+verify_num.send_keys(verfication_num)
+
+verify_button = driver.find_element(By.CLASS_NAME, "VfPpkd-LgbsSe")
+verify_button.click()
