@@ -19,6 +19,12 @@ print("Enter a strong password")
 password = input()
 print("Enter your phone number")
 phone_num = input()
+DOB = input("Enter your date of birth like this 2002 5 27: \n").split()
+year = DOB[0]
+month = DOB[1]
+day = DOB[2]
+gender = input("Enter 1 if you are male, 2 if you are female, 3 if you don't want to reveal, 4 if other(custom) \n")
+
 
 os.environ['PATH'] += r"C:\\driver"
 driver = webdriver.Firefox()
@@ -57,3 +63,21 @@ verify_num.send_keys(verfication_num)
 
 verify_button = driver.find_element(By.CLASS_NAME, "VfPpkd-LgbsSe")
 verify_button.click()
+
+time.sleep(5)
+year_field = driver.find_element(By.ID, "year")
+year_field.click()
+year_field.send_keys(year)
+
+month_field = Select(driver.find_element(By.ID, 'month'))
+month_field.select_by_value(month)
+
+day_field = driver.find_element(By.ID, "day")
+day_field.click()
+day_field.send_keys(day)
+
+gender_field = Select(driver.find_element(By.ID, "gender"))
+gender_field.select_by_value(gender)
+
+Next_field2 = driver.find_elements(By.CLASS_NAME, "VfPpkd-LgbsSe")[0]
+Next_field2.click()
