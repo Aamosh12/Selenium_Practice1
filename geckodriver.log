@@ -2903,13 +2903,11 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 JavaScript warning: https://accounts.google.com/signup line 2 > eval line 211 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
-ttings.jsm: 
-  Failed to download attachment: TypeError: NetworkError: Network request failed
-console.error: RemoteSecuritySettings.jsm: 
-  Failed to download attachment: TypeError: NetworkError: Network request failed
-console.error: RemoteSecuritySettings.jsm: 
-  Failed to download attachment: TypeError: NetworkError: Network request failed
-console.error: RemoteSecuritySettings.jsm: 
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1679996800630	Marionette	INFO	Stopped listening on port 64814
+Dynamically enable window occlusion 1
+error: RemoteSecuritySettings.jsm: 
   Failed to download attachment: TypeError: NetworkError: Network request failed
 console.error: RemoteSecuritySettings.jsm: 
   Failed to download attachment: TypeError: NetworkError: Network request failed
