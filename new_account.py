@@ -38,3 +38,6 @@ passwd.send_keys(password)
 
 confirm_pass = driver.find_element(By.NAME, "ConfirmPasswd")
 confirm_pass.send_keys(password)
+
+Next_field = driver.find_elements(By.CLASS_NAME, "VfPpkd-LgbsSe")[1]
+Next_field.click()
